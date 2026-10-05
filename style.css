@@ -1,3 +1,17 @@
+/*
+Real phone test observations:
+1. The real phone showed slightly different text wrapping compared with DevTools emulation.
+2. The navigation links were easier to tap on the real touchscreen because each link has a 44px minimum height.
+3. The real phone's browser address bar changed the available screen height compared with DevTools.
+
+Fix made:
+I added min-height: 44px and padding to the navigation links so they have a comfortable touch area on a real phone.
+*/
+
+
+
+
+
 *,
 *::before,
 *::after {
