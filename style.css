@@ -1,15 +1,23 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+.card {
+    width: 320px;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: var(--radius);
 }
 
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--brand);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
 :root {
     --brand: #2563eb;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    max-width: 70ch;
+    --radius: 8px;
 }
