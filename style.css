@@ -1,3 +1,20 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #2563eb;
+    --radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 70ch;
+}
+
 .card {
     width: 320px;
     padding: 1rem;
@@ -17,7 +34,19 @@
 .btn:hover {
     background-color: #1d4ed8;
 }
-:root {
-    --brand: #2563eb;
-    --radius: 8px;
+
+/* Task 3 - Specificity */
+
+#main p {
+    color: red;
 }
+
+p {
+    color: green;
+}
+
+#main .card p {
+    color: green;
+}
+
+/* Green wins because this selector has higher specificity than #main p. */
