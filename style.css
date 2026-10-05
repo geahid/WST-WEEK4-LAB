@@ -49,4 +49,22 @@ p {
     color: green;
 }
 
-/* Green wins because this selector has higher specificity than #main p. */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--brand);
+}
+
+.navbar a:hover {
+    color: #1d4ed8;
+}
