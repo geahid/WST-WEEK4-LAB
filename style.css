@@ -41,10 +41,17 @@ h1 {
 
 .navbar nav {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
 }
 
 .navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     color: var(--brand);
 }
@@ -87,9 +94,15 @@ h1 {
     background-color: #1d4ed8;
 }
 
-/* Breakpoint: the navbar becomes cramped below this width. */
+/* Navbar becomes horizontal when there is enough space. */
 @media (min-width: 600px) {
     .navbar {
         flex-direction: row;
+    }
+
+    .navbar nav {
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
     }
 }
